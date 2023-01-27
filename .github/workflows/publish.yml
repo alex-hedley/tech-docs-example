@@ -1,0 +1,26 @@
+# https://github.com/ministryofjustice/hmpps-tech-docs/blob/main/.github/workflows/publish.yml
+# https://raw.githubusercontent.com/ministryofjustice/hmpps-tech-docs/main/.github/workflows/publish.yml
+
+name: Publish
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "main"
+    paths:
+      - "source/**"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    container:
+      image: ministryofjustice/cloud-platform-tech-docs-publisher:1.6
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Build
+      run: _scripts/moj/build.sh
+    - name: Publish site
+      run: _scripts/moj/publish.sh
