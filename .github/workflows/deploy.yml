@@ -20,6 +20,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
+      
+      - name: Set up 💎 Ruby 2.7.3
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.3
+          # bundler-cache: true
+
       - name: Deploy
         run: _scripts/deploy.sh
         env:
