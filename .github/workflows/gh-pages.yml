@@ -1,0 +1,21 @@
+name: Deploy (Middleman)
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build_and_deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      
+      # https://github.com/marketplace/actions/middleman-github-pages-action
+      # https://github.com/yurikoval/middleman-gh-pages-action
+      - name: Build & Deploy to GitHub Pages
+        with:
+          REMOTE_BRANCH: gh-pages
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: yurikoval/middleman-gh-pages-action@master
