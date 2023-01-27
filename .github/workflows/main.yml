@@ -37,6 +37,11 @@ jobs:
       - name: Build
         run: bundle exec middleman build
       
+      - name: Copy CNAME
+        run: |
+          echo "Copying cname across too"
+          cp -a CNAME build
+      
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.9.2
         with:
