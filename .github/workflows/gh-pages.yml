@@ -1,6 +1,7 @@
-name: Deploy (Middleman)
+name: Deploy (Middleman) (marketplace)
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
 
