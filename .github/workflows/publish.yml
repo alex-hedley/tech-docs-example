@@ -11,6 +11,23 @@ on:
     paths:
       - "source/**"
 
+permissions:
+  # actions: read|write|none
+  # checks: read|write|none
+  # contents: read|write|none
+  # deployments: read|write|none
+  # id-token: read|write|none
+  # issues: read|write|none
+  # discussions: read|write|none
+  # packages: read|write|none
+  # pages: read|write|none
+  # pull-requests: read|write|none
+  # repository-projects: read|write|none
+  # security-events: read|write|none
+  # statuses: read|write|none
+  contents: write
+  pages: write
+
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -22,5 +39,7 @@ jobs:
         fetch-depth: 0
     - name: Build
       run: _scripts/moj/build.sh
+    # - name: Link checker
+    #   run: _scripts/moj/check.sh
     - name: Publish site
       run: _scripts/moj/publish.sh
