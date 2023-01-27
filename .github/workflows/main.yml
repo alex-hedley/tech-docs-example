@@ -21,6 +21,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
         
+      - name: Install Dependencies
+        run: |
+          echo 'Installing bundles...'
+          gem install bundler
+          bundle install
+          bundle list | grep "middleman ("
+        
       - name: Build
         run: bundle exec middleman build
       
