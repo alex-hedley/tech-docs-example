@@ -1,0 +1,24 @@
+name: Deploy (Middleman)
+
+on:
+  push:
+    branches: [main]  
+    paths:
+      - "source/**"
+
+jobs:
+  build_and_deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Deploy
+        run: _scripts/deploy.sh
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_ACTOR: ${{ github.actor }}
+          SITE_LOCATION: '.'
+          BUILD_LOCATION: 'build'
+          REMOTE_BRANCH: 'gh-pages'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
