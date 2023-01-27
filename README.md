@@ -1,6 +1,6 @@
 # Tech Docs (Example)
 
-[![Ruby 2.7.3](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white)](https://www.ruby-lang.org/en/) (2.7.3)
+[![Ruby](https://img.shields.io/badge/Ruby_3.2.0-CC342D?style=for-the-badge&logo=ruby&logoColor=white)](https://www.ruby-lang.org/en/)
 
 <!-- [![Deploy (Middleman) (marketplace)](https://github.com/alex-hedley/tech-docs-example/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/alex-hedley/tech-docs-example/actions/workflows/gh-pages.yml) -->
 <!-- [![Deploy (Middleman)](https://github.com/alex-hedley/tech-docs-example/actions/workflows/deploy.yml/badge.svg)](https://github.com/alex-hedley/tech-docs-example/actions/workflows/deploy.yml) -->
