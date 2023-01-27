@@ -4,7 +4,8 @@ set -e
 
 echo 'Installing bundles...'
 cd ${SITE_LOCATION}
-gem install bundler
+# gem install bundler
+gem install bundler -v '~> 2.3.13'
 bundle install
 bundle list | grep "middleman ("
 
