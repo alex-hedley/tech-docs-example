@@ -5,7 +5,8 @@
 <!-- [![Deploy (Middleman) (marketplace)](https://github.com/alex-hedley/tech-docs-example/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/alex-hedley/tech-docs-example/actions/workflows/gh-pages.yml) -->
 <!-- [![Deploy (Middleman)](https://github.com/alex-hedley/tech-docs-example/actions/workflows/deploy.yml/badge.svg)](https://github.com/alex-hedley/tech-docs-example/actions/workflows/deploy.yml) -->
 <!-- [![Deploy](https://github.com/alex-hedley/tech-docs-example/actions/workflows/main.yml/badge.svg)](https://github.com/alex-hedley/tech-docs-example/actions/workflows/main.yml) -->
-[![Publish](https://github.com/alex-hedley/tech-docs-example/actions/workflows/publish.yml/badge.svg)](https://github.com/alex-hedley/tech-docs-example/actions/workflows/publish.yml)
+<!-- [![Publish](https://github.com/alex-hedley/tech-docs-example/actions/workflows/publish.yml/badge.svg)](https://github.com/alex-hedley/tech-docs-example/actions/workflows/publish.yml) -->
+[![Deploy](https://github.com/alex-hedley/tech-docs-example/actions/workflows/main.yml/badge.svg)](https://github.com/alex-hedley/tech-docs-example/actions/workflows/main.yml)
 
 ## Site
 
